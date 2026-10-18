@@ -65,6 +65,8 @@ async def socket(request):
 
 app = web.Application()
 app.router.add_get('/', index)
+app.router.add_get('/logo.png', lambda req: web.FileResponse(BASE / 'logo.png'))
+app.router.add_get('/favicon.png', lambda req: web.FileResponse(BASE / 'favicon.png'))
 app.router.add_get('/ws', socket)
 app.router.add_get('/health', lambda req: web.Response(text='OK'))
 

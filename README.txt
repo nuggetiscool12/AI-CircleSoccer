@@ -23,3 +23,5 @@ NOTES:
   has not been fully browser-tested.
 - You can test locally by running `pip install -r requirements.txt`, then
   `python server.py`, then opening http://localhost:8000.
+
+CUSTOM LOGO UPDATE: logo.png and favicon.png must be uploaded alongside index.html in the GitHub repository root. On GitHub upload the updated index.html, logo.png and favicon.png; commit changes and Render should redeploy.

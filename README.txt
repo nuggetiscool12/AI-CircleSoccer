@@ -1,27 +1,15 @@
-CIRCLE CHAMPIONS — ONLINE ROOM CODES
+BOUNCE SOCCER 2.1 — GAMEPLAY OVERHAUL
 
-Both players visit the SAME public website. Player 1 clicks Create Room and
-shares the 6-character code. Player 2 enters the code and clicks Join Room.
-No local IP address, Python install, or Wi-Fi sharing is needed on player PCs.
+Changes:
+- Improved player movement with acceleration and momentum
+- More intelligent AI pressing and covering space
+- Attacking teammates make supporting runs
+- Passing picks safer lanes instead of always a fixed-distance teammate
+- Shot accuracy affected by defensive pressure and shooting angle
+- Opponent tackles use proximity and difficulty
+- Match clock pauses during goal celebrations, replays, and kickoffs
+- Existing logo, teams, room-code multiplayer and Render deployment retained
 
-FREE HOSTING WITH RENDER (requires a free Render account and GitHub account):
-1. Extract this ZIP.
-2. Create a NEW GitHub repository and upload index.html, server.py,
-   requirements.txt, and render.yaml to the repository root.
-3. On render.com, choose New > Blueprint and connect your repository.
-4. Confirm the free web service and deploy it.
-5. Render will give you a public https://...onrender.com address.
-6. Open that same address on both PCs and use Create Room / Join Room.
+Deploy: Replace the existing GitHub repository files with the files in this folder, commit, wait for Render to redeploy, and hard-refresh both browsers.
 
-NOTES:
-- The online address is assigned after deployment; the ZIP itself is not live.
-- Free Render services can sleep when inactive. First visit after sleeping
-  may take a minute; refresh if necessary.
-- Rooms are temporary and reset when the server restarts.
-- All players in a room must connect to the SAME running server instance.
-- The game is an experimental multiplayer build; gameplay synchronization
-  has not been fully browser-tested.
-- You can test locally by running `pip install -r requirements.txt`, then
-  `python server.py`, then opening http://localhost:8000.
-
-CUSTOM LOGO UPDATE: logo.png and favicon.png must be uploaded alongside index.html in the GitHub repository root. On GitHub upload the updated index.html, logo.png and favicon.png; commit changes and Render should redeploy.
+Note: Online multiplayer still requires live browser testing on two machines.
